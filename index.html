@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="IMG_20221126_212517.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#facebook" target="_blank">
+              <i data-feather="facebook"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#instagram" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#twitter" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#linkedin" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-1">
+          <a href="./CV.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-small" target="_blank" download="CV.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">CV</span>
+          </a>
+        </div>
+        <div class="w3-container w3-padding-1">
+          <a href="./FALL_TRANSCRIPT.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-small" target="_blank" download="FALL_TRANSCRIPT.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">TRANSCRIPT</span>
+          </a>
+          
+        <div class="w3-container w3-padding-1">
+          <a href="./ICM_MCM.jpg" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-small" target="_blank" download="ICM_MCM.jpg">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">CERTIFICATE</span>
+          </a>
+        </div>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM VITAE</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;"></p>
+            <h1>Yihua Liang</h2>
+            <h2>Research Assistant</h3>
+            <p>I worked on RO-UF double membrane system, PCM materials, and biochar material, etc. I am doing my bachelor at the school of civil engineering and architechture, Wuhan Polytechnic University.</p>
+          </div>
+
+<!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+            <p class="w3-margin-top-2"> 
+              I published two papers in my undergraduate learning and particiapted in two Mathematical modelling contests.
+              I also practiced many useful skills in class, including plate-streaking. I can analyze and visualize data with MatLab and SPSS.
+              I can use different algorithms such as neuron network for optimization.
+            </p>
+          </div>
+
+
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber">MY LAB EXPERIENCE</h3>
+              <div class="">
+                <h4>Research Assistant at Sewage Treatment Lab</h4>
+                <p>Summer 2022</p>
+<!--ul{width:100%;}ul li{width:130px;float:left;}--></style><ul>
+<li>Fine sand, activated carbon, pp cotton, nylon, etc. were used as filter elements for sewage pretreatment (filtration) to remove
+larger particles.</li>
+<li>Under the pressure of 0-6 bar of a peristaltic pump, the livestock sewage was filtered by the ultrafiltration membrane, and then
+the concentration of TN, TP, NH3-N and COD were determined by a UV spectrophotometer, and the turbidity was measured by a
+turbidity meter.</li>
+<li>Under different pressures of 1, 2, and 4 bar, the wastewater filtered by the reverse osmosis membrane was used to measure the
+concentrations of the above four substances and various ions with a UV spectrophotometer. Line charts were drawn using excel
+to determine the relationship between pressure and the removal rate of the measured species, and to discover the reasons for
+differences in filtration rates between ions.</li>
+<li>A conductivity meter was used to measure the electric conductivity(EC) of sewage before and after reverse osmosis membrane
+filtration, and Pearson correlation analysis and fitting tool of SPSS were used to determine the relationship between pressure
+and EC retention rate.</li>
+<li>An article called “Study on the Effect of Ultrafiltration Reverse Osmosis Dual Membrane Method on Livestock Wastewater and
+Examination of Bisphenol A in Wastewater” was published in an EI Conference Journal.</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Research Assistant at Material Lab</h4>
+                <p>Fall 2021 - Present</p>
+<!--ul{width:100%;}ul li{width:130px;float:left;}--></style><ul>
+<li>A thermostatic magnetic stirrer was used to melt and mix the heat storage material, i.e. the sodium sulfate decahydrate, together
+with the nucleating agent.</li>
+<li>A electronic analytical balance was utilized to weigh the molten salt and SAP material and they were mixed in different mass
+ratios.</li>
+<li>The leakage experiment was done with some pieces of filter paper and a thermostatic drying oven to test whether the salt and
+SAP were interlocked tightly.</li>
+<li>Differential scanning calorimetry was used to measure the enthalpy change and melting point of nine mixture samples, each
+with different ratios of PCM and SAP, to determine the corresponding ratio with the highest heat storage capacity.</li>
+<li>An article called “Preparation of Sodium Sulfate Decahydrate Composite Phase Change Material and Its Application in External
+Wall Insulation” is under preparation.</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Research Assistant at Water Supply and Drainage Engineering Lab</h4>
+                <p>Spring 2021 - Summer 2021</p>
+<!--ul{width:100%;}ul li{width:130px;float:left;}--></style><ul>
+<li>After weighing with an electronic analytical balance, the biochar powder and the oyster shell powder were mixed to modify the
+surface of the porous material, and part of the hole surface was blocked with calcium oxide to facilitate phosphorus adsorption.</li>
+<li>Five mixtures with different proportions of components was added to the phosphorus solutions and the variable-speed shaker
+was used for 24 hours to promote the precipitation reaction and the sediment adsorption.</li>
+<li>The syringe filters with microfiltration membranes whose pore sizes are 0.45µm, were used to filter out the precipitate to obtain
+the filtrate.</li>
+<li>Ascorbic acid and molybdate solution were added to the five filtrates with a pipettor, and the remaining phosphorus ion
+concentration of each one was measured three times in parallel using a UV spectrophotometer to observe the average
+adsorption effect and determine the best proportion of the mixture components.</li>
+<li>An article called “Study on Modification Methods of Peanut Shell Biochar Modified by Oyster Shell” was published.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY EDUCATION</h3>
+                <h4>Bachelor of Science in Water Engineering (GPA: 3.77)
+Wuhan Polytechnic University, Wuhan, CN</h4>
+                <p>Expected June 2023 
+                  </div>
+              <div class="">
+                
+<!--ul{width:100%;}ul li{width:130px;float:left;}--></style><ul>
+<li>School: School of Civil Engineering and Architecture</li>
+<li>Overall academic performance: Top 5% (2/237) in the school in first two years</li>
+<li>Coursework includes: Physical Chemistry (93), Inorganic and Analytic Chemistry (98), Water Quality Analytical Chemistry (91),
+Microbiology Experiments in Water Treatment (94), Rational Mechanics (94), Engineering Mechanics(94), Electronic Technique (90),
+Pump And Pump Station (91)</li>
+                </ul>
+              </div>
+                </p>
+                
+            </div>
+
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY SKILLS</h3>
+              <!--SOFT SKILLS-->
+              <h4>Language skills</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>IELTS: Overall 7 (Listening 6.5 Reading 8.5 Writing 6.5 Speaking 6.5) ; Mandarin(native)</li>
+              </ul>
+              <h4>Tools and Programming Languages</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Matlab(advanced), SPSS(advanced), Python(medium), LaTeX(advanced), C++(medium), CAD(advanced), Origin(medium)</li>
+              </ul>
+              <h4>Quantitative Research</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Mathematical optimization, Mathematical Modeling</li>
+              </ul>
+              <h4>Other Measurement Tools</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Electronic Total Station(different types), Theodolite(different types)</li>
+              </ul>
+              <!--TECHNICAL SKILLS-->
+            </div>
+            <!--AWARDS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">HONERS AND AWARDS</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+<li>Designated as Successful Participant in MCM/ICM (Interdisciplinary Contest In Modeling)<div align="right">2022</div></li>                  
+<li>National Encouragement Scholarship (5000 RMB, only 15 students awarded in the department)<div align="right">2021-2022</div></li>
+<li>Second Award in Hubei Province in CUMCM (China Undergraduate Mathematical Contest in Modelling)<div align="right">2021</div></li>
+<li>First Award in the preliminary Round in the FLTRP Cup National English Speaking Contest <div align="right">2020</div></li>
+<li>Second Award in the Preliminary Round in the Chinese Mathematics Competitions (Non-Mathematics Professional Group)<div align="right">2020</div></li>
+                </ul>
+            </div>
+
+
+            <!--PUBLICATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">PUBLICATIONS</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Liang.Y et al, 2021. Study on Modification Methods of Peanut Shell Biochar Modified by Oyster Shell. Green Technology, 24(2),
+p.143:145. (Published)</li>
+                  <li>Fu.W and Liang.Y, 2022. Preparation of sodium sulfate decahydrate composite phase change material and its Application in external
+wall insulation. (In Process)</li>
+                  <li>Liang.Y et al, 2022. Study on the Effect of Ultrafiltration Reverse Osmosis Dual Membrane Method on Livestock Wastewater and
+Examination of Bisphenol A in Wastewater. 2022 International Conference on Computer
+Simulation Technologies and Mathematical Modeling (CSTMM 2022)(Published)</li>
+                </ul>
+            </div>
+
+
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY HOBBIES AND INTERESTS</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Read books or articles about philosophy, history, psychology, medicine and economy.</li>
+                </ul>
+            </div>
+
+            <!--REFERENCE SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY REFERENCES</h3>
+              <h4>Na Wei, Associate Professor</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+86 13477090249</li>
+                <li>01971@whpu.edu.cn</li>
+              </ul>
+              <h4>WanwanFu, Lecturer</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+86 13724042474</li>
+                <li>whwanwanfu@whpu.edu.cn</li>
+              </ul>
+              <h4>Xinghua He, Professor</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+86 13995678388</li>
+                <li>12269@whpu.edu.cn</li>
+              </ul>
+            </div>            
+          </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Name: Yihua Liang</p>
+              <p>Adress: No.430023,Wuhan City,Hubei Province,China</p>
+              <p>Phone number: +86 18506983063</p>
+              <p>E-mail: yihua.liang.15@gmail.com</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2022 - Yihua Liang</p>
+           <p class="w3-small"> </p>
+          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
